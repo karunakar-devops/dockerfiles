@@ -3,7 +3,8 @@ FROM almalinux:${version:-8}
 #RUN cat /etc/os-release
 ARG course=docker
 ARG trainer=sivakumar
-ENV duration=100hrs
-RUN echo course is ${course} and trainer is ${trainer}
+ARG duration=120hrs
+ENV duration=${duration}
+RUN echo course is ${course}, trainer is ${trainer}  and duration is ${duration}
 CMD [ "sleep", "100"]
 
