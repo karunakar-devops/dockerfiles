@@ -1,3 +1,3 @@
 FROM almalinux:9
-RUN mkdir /app
+WORKDIR /afb
 CMD ["sleep", "100"]
